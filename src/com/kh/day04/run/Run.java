@@ -7,9 +7,10 @@ public class Run {
 	public static void main(String [] args)
 	{
 		Exercise_DimArray dimArr = new Exercise_DimArray();
-		// dimArr.exercise1();
+		// dimArr.exercise2();
 		// dimArr.exercise9();
 		Exercise_Exception excp = new Exercise_Exception();
-		excp.practice2();
+		// excp.exercise3();
+		excp.exercise4();
 	}
 }

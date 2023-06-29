@@ -14,7 +14,7 @@ public class Run {
 		// exArr.exercise1();
 		// exArr.exercise2();
 		// exArr.arrayCopyExercise();
-		// exArr.lottoExercise();
+		 exArr.lottoExercise();
 		Exercise_For exFor = new Exercise_For();
 		// exFor.forExercise2();
 		//exFor.forDoubleExercise1();
@@ -36,6 +36,6 @@ public class Run {
 		 Exercise_RandomGame rg1 = new Exercise_RandomGame();
 		// rg1.RandomGame2();
 		Exercise_ArrayPractice arrPrac = new Exercise_ArrayPractice(); 
-		arrPrac.practice12();
+		// arrPrac.practice12();
 	}
 }

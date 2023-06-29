@@ -64,10 +64,15 @@ public class Exercise_Array1 {
 			lotto[i] = rand.nextInt(45) + 1;
 			for(int j = 0; j < i; j++) { // 중복검사
 				if(lotto[j] == lotto[i]) {
-					lotto[i] = rand.nextInt(45) + 1;
+					i--; // 중복되었다면 다시 중복된 값의 인덱스로
+					break; // 돌아가라
+					//lotto[i] = rand.nextInt(45) + 1;
 				}
 			}
 		}
+		// 오름차순으로 정렬 -> 버블정렬 사용
+		// for의 변수가 증가하기만 하면 됨 그래서 쉬움
+		// 단, 안에 있는 for문의 조건식의 최대값은 감소(-i)해야함
 		for(int i = 0; i < lotto.length-1; i++) {
 			for(int j = 0; j < (lotto.length-1)-i; j++) {
 				if(lotto[j] > lotto[j+1]) {

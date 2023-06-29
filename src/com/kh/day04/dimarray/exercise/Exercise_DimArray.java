@@ -201,8 +201,21 @@ public class Exercise_DimArray {
 	
 	public void exercise10() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("정사각행렬의 사이즈를 입력하시오 > ");
-		int size = sc.nextInt();
-		System.out.print("2차원 배열 크기 입력(정방형) > ");
+		while(true) {
+			System.out.print("정사각행렬의 사이즈를 입력하시오 > ");
+			int n = sc.nextInt();
+			System.out.print("2차원 배열 크기 입력(정방형) > ");
+			int m = sc.nextInt();
+			int value = 1;
+			int [][] arrs = new int [n][m]; 
+			if(n == m) {
+				for(int i = 0; i < arrs.length; i++) {
+					for(int j = 0; j < arrs[i].length; j++) {
+						
+					}
+				}
+			}
+		}
+		
 	}
 }
