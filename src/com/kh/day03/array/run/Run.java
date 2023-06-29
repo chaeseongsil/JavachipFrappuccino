@@ -1,6 +1,7 @@
 package com.kh.day03.array.run;
 
 import com.kh.day03.array.exercise.Exercise_Array1;
+import com.kh.day03.array.exercise.Exercise_ArrayPractice;
 import com.kh.day03.array.exercise.Exercise_For;
 import com.kh.day03.array.exercise.Exercise_For2;
 import com.kh.day03.array.exercise.Exercise_For3;
@@ -32,7 +33,9 @@ public class Run {
 		// exFor3.ExerciseFor5();
 		// exFor3.ExerciseFor6();
 		// exFor3.ExerciseFor7();
-		Exercise_RandomGame rg1 = new Exercise_RandomGame();
-		rg1.RandomGame1();
+		 Exercise_RandomGame rg1 = new Exercise_RandomGame();
+		// rg1.RandomGame2();
+		Exercise_ArrayPractice arrPrac = new Exercise_ArrayPractice(); 
+		arrPrac.practice12();
 	}
 }
