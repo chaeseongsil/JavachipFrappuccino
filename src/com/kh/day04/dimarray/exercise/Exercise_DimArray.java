@@ -207,13 +207,35 @@ public class Exercise_DimArray {
 			System.out.print("2차원 배열 크기 입력(정방형) > ");
 			int m = sc.nextInt();
 			int value = 1;
+			int left = m;
+			int top = 1;
+			int bottom = 0;
 			int [][] arrs = new int [n][m]; 
 			if(n == m) {
+				for(int i = n; i > 0; i--) {
+					for(int j = 0; j < m; j++) {
+						left -= top;
+						arrs[bottom][left] = value;
+						value++;
+					}
+					m--;
+					for(int j = 0; j < m; j++) {
+						bottom += top;
+						arrs[bottom][left] =value;
+						value++;
+					}
+					top = top * (-1);
+				}
 				for(int i = 0; i < arrs.length; i++) {
 					for(int j = 0; j < arrs[i].length; j++) {
-						
+						System.out.printf(" %2d ", arrs[i][j]);
 					}
+					System.out.println();
 				}
+				break;
+			} else {
+				System.out.println("행과 열은 같아야 합니다. 다시 입력해주세요.");
+				continue;
 			}
 		}
 		
