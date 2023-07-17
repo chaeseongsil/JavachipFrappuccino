@@ -50,17 +50,17 @@ public class Exercise_AudioLineEvent extends JFrame{
 				@Override
 				public void update(LineEvent event) {
 					if(event.getType() == LineEvent.Type.STOP) { // 노래가 멈추면
-						getContentPane().setBackground(Color.ORANGE);
-						label.setText("연주 끝");
+						getContentPane().setBackground(Color.ORANGE); // 배경색 변경
+						label.setText("연주 끝"); // 텍스트 변경
 					}
 					try {
-						audioStream.close();
+						audioStream.close();	// 스트림 닫기, 자원 해제
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
 				}
-			});
-			clip.start();
+			});	// 노래가 끝날 때 동작
+			clip.start();	// 프로그램 시작하자마자 노래 시작
 		} catch (LineUnavailableException e) {
 			e.printStackTrace();
 		} catch (UnsupportedAudioFileException e) {
